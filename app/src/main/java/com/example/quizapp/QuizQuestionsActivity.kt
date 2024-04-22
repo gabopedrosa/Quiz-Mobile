@@ -12,7 +12,8 @@ import android.widget.*
 import androidx.core.content.ContextCompat
 import kotlin.reflect.typeOf
 
-class QuizQuestionsActivity : AppCompatActivity() {
+class
+QuizQuestionsActivity : AppCompatActivity() {
     private var userName: String? = null
 
     private val questionsList: ArrayList<Question> = Constants.getQuestions()
@@ -53,7 +54,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
             if (!isAnswerChecked) {
                 val anyAnswerIsChecked = selectedAlternativeIndex != -1
                 if (!anyAnswerIsChecked) {
-                    Toast.makeText(this, "Please, select an alternative", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Selecione uma alternativa", Toast.LENGTH_SHORT).show()
                 } else {
                     val currentQuestion = questionsList[currentQuestionIndex]
                     if (
@@ -67,7 +68,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
                     }
 
                     isAnswerChecked = true
-                    btnSubmit?.text = if (currentQuestionIndex == questionsList.size - 1) "FINISH" else "GO TO NEXT QUESTION"
+                    btnSubmit?.text = if (currentQuestionIndex == questionsList.size - 1) "FINALIZAR" else "PRÓXIMA QUESTÃO"
                     selectedAlternativeIndex = -1
                 }
             } else {
@@ -116,7 +117,7 @@ class QuizQuestionsActivity : AppCompatActivity() {
             tvAlternatives!![alternativeIndex].text = questionsList[currentQuestionIndex].alternatives[alternativeIndex]
         }
 
-        btnSubmit?.text = if (currentQuestionIndex == questionsList.size - 1) "FINISH" else "SUBMIT"
+        btnSubmit?.text = if (currentQuestionIndex == questionsList.size - 1) "FINALIZAR" else "ENVIAR"
     }
 
     private fun defaultAlternativesView() {

@@ -20,8 +20,8 @@ class ResultActivity : AppCompatActivity() {
         val scoreTv: TextView = findViewById(R.id.scoreTv)
         val btnRestart: Button = findViewById(R.id.btnRestart)
 
-        congratulationsTv.text = "Congratulations, $userName!"
-        scoreTv.text = "Your score is $score of $totalQuestions"
+        congratulationsTv.text = "Parabéns!, $userName!"
+        scoreTv.text = "Seu score foi $score de $totalQuestions"
         btnRestart.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
