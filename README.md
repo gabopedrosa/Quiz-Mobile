@@ -51,11 +51,6 @@ Coloque qualquer informação adicional aqui
 | Cor exemplo       | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
 
-## Autores
-
-- [@octokatherine](https://www.github.com/octokatherine)
-
-
 ## Etiquetas
 
 Adicione etiquetas de algum lugar, como: [shields.io](https://shields.io/)
