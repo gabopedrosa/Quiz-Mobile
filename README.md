@@ -70,7 +70,7 @@ Por favor, siga o `código de conduta` desse projeto.
 
 ## Demonstração
 
-Insira um gif ou um link de alguma demonstração
+![Cat GIF](https://example.com/cat.gif)
 
 
 ## Deploy
