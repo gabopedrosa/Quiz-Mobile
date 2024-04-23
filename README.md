@@ -4,6 +4,7 @@
 T197-89 Desenv plataformas móveis
 
 ## Documentação da API
+Realtime Database - FireBase API
 
 #### Retorna todos os itens
 
@@ -11,23 +12,18 @@ T197-89 Desenv plataformas móveis
   Requisito: Android Studio
 ```
 
-| Parâmetro   | Tipo       | Descrição                           |
-| :---------- | :--------- | :---------------------------------- |
-| `api_key` | `string` | **Obrigatório**. A chave da sua API |
+| Parâmetro   | Tipo       | Descrição                                            |
+| :---------- | :--------- | :--------------------------------------------------- |
+| `api_key` | `string` | **Obrigatório**. AIzaSyCPlqRE4O22QrHhqoPAYITGRdrynnih4Mo |
 
-#### Retorna um item
-
-```http
-  GET /api/items/${id}
+#### Retorna dados do banco
+```
+https://console.firebase.google.com/u/2/project/quiz-kotlin-d6d41/database/quiz-kotlin-d6d41-default-rtdb/data/~2F?hl=pt-br
 ```
 
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
-
-#### add(num1, num2)
-
-Recebe dois números e retorna a sua soma.
+| Parâmetro   | Tipo       | Descrição                                         |
+| :---------- | :--------- | :------------------------------------------------ |
+| `key`      | `string` | **Obrigatório**. Banco retorna KEY gerada de usuário |
 
 
 ## Referência
@@ -35,17 +31,18 @@ Recebe dois números e retorna a sua soma.
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
  - [Awesome README](https://github.com/matiassingers/awesome-readme)
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [FIREBASE Realtime, database](https://www.youtube.com/watch?v=3XiZF1UBn50&ab_channel=MkrDeveloper)
 
 
 ## Apêndice
 
-Coloque qualquer informação adicional aqui
+Projeto Integrado com Kotlin no Android Studio, utiliza uma integração com a API do FireBase usando Realtime Database
 
 ## Documentação de cores
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Cor exemplo       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
+| Cor exemplo       | ![#FFBB86FC](https://via.placeholder.com/10/0a192f?text=+) #0FFBB86FC |
 | Cor exemplo       | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
 | Cor exemplo       | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
 | Cor exemplo       | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
