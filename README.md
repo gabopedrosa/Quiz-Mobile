@@ -39,16 +39,15 @@ https://console.firebase.google.com/u/2/project/quiz-kotlin-d6d41/database/quiz-
 Projeto Integrado com Kotlin no Android Studio, utiliza uma integração com a API do FireBase usando Realtime Database
 
 ## Documentação de cores
-
-| Cor               | Hexadecimal                                                |
-![#ffbb86fc](https://via.placeholder.com/15/ffbb86fc/000000?text=+) `#ffbb86fc` - Purple 200
-![#ff9800](https://via.placeholder.com/15/ff9800/000000?text=+) `#ff9800` - Color Primary
-![#ffbf00](https://via.placeholder.com/15/ffbf00/000000?text=+) `#ffbf00` - Purple 700
-![#ff03dac5](https://via.placeholder.com/15/ff03dac5/000000?text=+) `#ff03dac5` - Teal 200
-![#ff018786](https://via.placeholder.com/15/ff018786/000000?text=+) `#ff018786` - Teal 700
-![#777777](https://via.placeholder.com/15/777777/000000?text=+) `#777777` - Gray
-![#ff000000](https://via.placeholder.com/15/000000/000000?text=+) `#ff000000` - Black
-![#ffffffff](https://via.placeholder.com/15/ffffffff/000000?text=+) `#ffffffff` - White
+                                    |
+- ![#ffbb86fc](https://via.placeholder.com/15/ffbb86fc/000000?text=+) `#ffbb86fc` - Purple 200
+- ![#ff9800](https://via.placeholder.com/15/ff9800/000000?text=+) `#ff9800` - Color Primary
+- ![#ffbf00](https://via.placeholder.com/15/ffbf00/000000?text=+) `#ffbf00` - Purple 700
+- ![#ff03dac5](https://via.placeholder.com/15/ff03dac5/000000?text=+) `#ff03dac5` - Teal 200
+- ![#ff018786](https://via.placeholder.com/15/ff018786/000000?text=+) `#ff018786` - Teal 700
+- ![#777777](https://via.placeholder.com/15/777777/000000?text=+) `#777777` - Gray
+- ![#ff000000](https://via.placeholder.com/15/000000/000000?text=+) `#ff000000` - Black
+- ![#ffffffff](https://via.placeholder.com/15/ffffffff/000000?text=+) `#ffffffff` - White
 
 
 ## Etiquetas
