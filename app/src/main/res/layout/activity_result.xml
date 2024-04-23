@@ -29,13 +29,12 @@
         android:id="@+id/congratulationsTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Congratulations, Walisson!"
+        android:layout_marginTop="30dp"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        />
+        tools:text="Congratulations, Gabriel!" />
 
     <TextView
         android:id="@+id/scoreTv"
