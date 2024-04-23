@@ -6,24 +6,25 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.quizapp.databinding.ActivityMainBinding
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding : ActivityMainBinding
+    lateinit var firebaseReference: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val etName = findViewById<EditText>(R.id.etName)
-        val btnStart = findViewById<Button>(R.id.btnStart)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btnStart.setOnClickListener {
-            if (etName.text.isEmpty()) {
-                Toast.makeText(this, "Digite seu nome", Toast.LENGTH_LONG).show()
-            } else {
-                val intent = Intent(this, QuizQuestionsActivity::class.java)
-                intent.putExtra(Constants.USER_NAME, etName.text.toString())
-                startActivity(intent)
-//                finish()
-            }
+        firebaseReference = FirebaseDatabase.getInstance().reference
+
+        binding.btnStart.setOnClickListener {
+
         }
+
+
     }
 }
