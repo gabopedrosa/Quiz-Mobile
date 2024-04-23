@@ -41,11 +41,14 @@ Projeto Integrado com Kotlin no Android Studio, utiliza uma integração com a A
 ## Documentação de cores
 
 | Cor               | Hexadecimal                                                |
-| ----------------- | ---------------------------------------------------------------- |
-| Cor exemplo       | ![#FFBB86FC](https://via.placeholder.com/10/0a192f?text=+) #0FFBB86FC |
-| Cor exemplo       | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Cor exemplo       | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Cor exemplo       | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+![#ffbb86fc](https://via.placeholder.com/15/ffbb86fc/000000?text=+) `#ffbb86fc` - Purple 200
+![#ff9800](https://via.placeholder.com/15/ff9800/000000?text=+) `#ff9800` - Color Primary
+![#ffbf00](https://via.placeholder.com/15/ffbf00/000000?text=+) `#ffbf00` - Purple 700
+![#ff03dac5](https://via.placeholder.com/15/ff03dac5/000000?text=+) `#ff03dac5` - Teal 200
+![#ff018786](https://via.placeholder.com/15/ff018786/000000?text=+) `#ff018786` - Teal 700
+![#777777](https://via.placeholder.com/15/777777/000000?text=+) `#777777` - Gray
+![#ff000000](https://via.placeholder.com/15/000000/000000?text=+) `#ff000000` - Black
+![#ffffffff](https://via.placeholder.com/15/ffffffff/000000?text=+) `#ffffffff` - White
 
 
 ## Etiquetas
