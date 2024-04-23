@@ -11,20 +11,22 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding : ActivityMainBinding
-    lateinit var firebaseReference: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val etName = findViewById<EditText>(R.id.etName)
+        val btnStart = findViewById<Button>(R.id.btnStart)
 
-        firebaseReference = FirebaseDatabase.getInstance().reference
-
-        binding.btnStart.setOnClickListener {
-
+        btnStart.setOnClickListener {
+            if (etName.text.isEmpty()) {
+                Toast.makeText(this, "Por favor insira um nome válido.", Toast.LENGTH_LONG).show()
+            } else {
+                val intent = Intent(this, QuizQuestionsActivity::class.java)
+                intent.putExtra(Constants.USER_NAME, etName.text.toString())
+                startActivity(intent)
+//                finish()
+            }
         }
-
-
     }
 }
