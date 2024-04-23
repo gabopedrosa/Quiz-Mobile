@@ -1,3 +1,8 @@
+## Demonstração
+
+![GIF](https://media.giphy.com/media/StqUw6Mn5z4jn9PFfz/giphy.gif)
+
+
 
 # Quiz Mobile em Kotlin
 
@@ -68,16 +73,8 @@ Veja `contribuindo.md` para saber como começar.
 Por favor, siga o `código de conduta` desse projeto.
 
 
-## Demonstração
+## Executar projeto
 
-![GIF](https://media.giphy.com/media/StqUw6Mn5z4jn9PFfz/giphy.gif)
+Para executar esse projeto, rode o MainActivity no Android Studio
 
-
-## Deploy
-
-Para fazer o deploy desse projeto rode
-
-```bash
-  npm run deploy
-```
 
