@@ -11,21 +11,20 @@ object Constants {
         // 1
         val questionOne = Question(
             1,
-            "Que país essa bandeira representa?",
-            R.drawable.ic_flag_of_argentina,
-            arrayListOf("Argentina", "Australia", "Armenia", "Austria"),
-            0,
+            "Que animal representa essa imagem?",
+            R.drawable.lion_ai,
+            arrayListOf("Giraffa", "Baleia", "Leão", "Cachorro"),
+            2,
         )
         questionsList.add(questionOne)
 
         // 2
         val questionTwo = Question(
             2,
-            "Que país essa bandeira representa",
-            R.drawable.ic_flag_of_australia,
-            arrayListOf("Angola", "Austria",
-            "Australia", "Armenia"),
-            2
+            "De que desenho é essa imagem?",
+            R.drawable.phineas_ferb,
+            arrayListOf("Phineas e Ferb", "Batman", "Barbie", "Ben 10"),
+            0
         )
         questionsList.add(questionTwo)
 
@@ -33,9 +32,8 @@ object Constants {
         val questionThree = Question(
             3,
             "Que país essa bandeira representa",
-            R.drawable.ic_flag_of_brazil,
-            arrayListOf("Belarus", "Belize",
-            "Brunei", "Brazil"),
+            R.drawable.brasil,
+            arrayListOf("Bélgica", "Chile", "Colombia", "Brasil"),
             3
         )
         questionsList.add(questionThree)
@@ -43,10 +41,10 @@ object Constants {
         // 4
         val questionFour = Question(
             4,
-            "Que país essa bandeira representa?",
-            R.drawable.ic_flag_of_belgium,
-            arrayListOf("Bahamas", "Belgium",
-            "Barbados", "Belize"),
+            "Quem essa estátua representa?",
+            R.drawable.iracema,
+            arrayListOf("Padre Cícero", "Iracema Guardiã",
+            "São Francisco", "Belchior"),
             1
         )
         questionsList.add(questionFour)
@@ -55,9 +53,9 @@ object Constants {
         val questionFive = Question(
             5,
             "Que país essa bandeira representa?",
-            R.drawable.ic_flag_of_fiji,
-            arrayListOf("Gabon", "France",
-            "Fiji", "Finland"),
+            R.drawable.fiji,
+            arrayListOf("Gabão", "França",
+            "Fiji", "Finlândia"),
             2
         )
         questionsList.add(questionFive)
@@ -65,11 +63,11 @@ object Constants {
         // 6
         val questionSix = Question(
             6,
-            "Que país essa bandeira representa?",
-            R.drawable.ic_flag_of_germany,
-            arrayListOf("Germany", "Georgia",
-            "Greece", "none of these"),
-            0
+            "Qual o nome desse super Herói?",
+            R.drawable.invencible,
+            arrayListOf("Super-homem", "Lanterna Verde",
+            "Nenhum desses", "Invencível"),
+            3
         )
 
         questionsList.add(questionSix)
@@ -77,10 +75,10 @@ object Constants {
         // 7
         val questionSeven = Question(
             7,
-            "Que país essa bandeira representa?",
-            R.drawable.ic_flag_of_denmark,
-            arrayListOf("Dominica", "Egypt",
-            "Denmark", "Ethiopia"),
+            "Qual é o nome desse anti-herói?",
+            R.drawable.rorscharch,
+            arrayListOf("Justiceiro", "Deadpool",
+            "Rorschach", "Spawn"),
             2
         )
         questionsList.add(questionSeven)
@@ -88,10 +86,10 @@ object Constants {
         // 8
         val questionEight = Question(
             8,
-            "Que país essa bandeira representa?",
-            R.drawable.ic_flag_of_india,
-            arrayListOf("Ireland", "Iran",
-            "Hungary", "India"),
+            "Quantos anos tem o Cristo Redentor?",
+            R.drawable.cristoredentor,
+            arrayListOf("74 anos", "80 anos",
+            "55 anos", "92 anos"),
             3
         )
         questionsList.add(questionEight)
@@ -100,20 +98,20 @@ object Constants {
         val questionNine = Question(
             9,
             "Que país essa bandeira representa?",
-            R.drawable.ic_flag_of_new_zealand,
-            arrayListOf("Australia", "New Zealand",
-            "Tuvalu", "United States of America"),
-            1
+            R.drawable.germany,
+            arrayListOf("Nenhuma dessas opções", "Nova Zelândia",
+            "Polônia", "Australia"),
+            0
         )
         questionsList.add(questionNine)
 
         // 10
         val questionTen = Question(
             10,
-            "Que país essa bandeira representa?",
-            R.drawable.ic_flag_of_kuwait,
-            arrayListOf("Kuwait", "Jordan",
-            "Sudan", "Palestine"),
+            "Qual é o nome desse Jogador de Basquete?",
+            R.drawable.jordan,
+            arrayListOf("Michael Jordan", "Kyrie Irving",
+            "LeBron James", "Stephen Curry"),
             0
         )
         questionsList.add(questionTen)

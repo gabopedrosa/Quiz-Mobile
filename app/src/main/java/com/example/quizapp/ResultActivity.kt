@@ -22,6 +22,8 @@ class ResultActivity : AppCompatActivity() {
 
         congratulationsTv.text = "Parabéns!, $userName!"
         scoreTv.text = "Seu score foi $score de $totalQuestions"
+
+
         btnRestart.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
