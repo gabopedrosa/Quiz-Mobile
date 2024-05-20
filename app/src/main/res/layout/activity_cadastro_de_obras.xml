@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CadastroDeObras">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Cadastro de Obras"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/text_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:text="Nome"
+        android:textAlignment="center"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/text_autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:text="Autor"
+        android:textAlignment="center"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/text_data_criacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:text="Data da Criação"
+        android:textAlignment="center"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/text_periodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:text="Periodo Artistico"
+        android:textAlignment="center"
+        android:textColor="@color/gray" />
+
+
+    <Button
+        android:id="@+id/btn_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingVertical="10dp"
+        android:text="CADASTRAR"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>
