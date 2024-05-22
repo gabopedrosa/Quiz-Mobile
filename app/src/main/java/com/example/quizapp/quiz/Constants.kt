@@ -1,6 +1,7 @@
-package com.example.quizapp
+package com.example.quizapp.quiz
 
-import com.example.quizapp.ui.activity.Question
+import com.example.quizapp.R
+import com.example.quizapp.quiz.Question
 
 object Constants {
     val USER_NAME: String = "user_name"

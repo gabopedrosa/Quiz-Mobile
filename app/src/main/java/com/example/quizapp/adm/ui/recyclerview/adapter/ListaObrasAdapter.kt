@@ -1,4 +1,4 @@
-package com.example.quizapp.ui.recyclerview.adapter
+package com.example.quizapp.adm.ui.recyclerview.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,22 +7,23 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizapp.R
-import com.example.quizapp.models.Obra
+import com.example.quizapp.adm.models.Obra
 
-class ListaObrasAdapter(private val context: Context, obras: List<Obra>) :
-    RecyclerView.Adapter<ListaObrasAdapter.ViewHolder>() {
+class ListaObrasAdapter(
+    private val context: Context,
+    obras: List<Obra>) : RecyclerView.Adapter<ListaObrasAdapter.ViewHolder>() {
 
     private val obras = obras.toMutableList()
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun vincula(obra: Obra) {
-            val nome = itemView.findViewById<TextView>(R.id.nome)
+            val nome = itemView.findViewById<TextView>(R.id.obra_item_nome)
             nome.text = obra.nome
-            val autor = itemView.findViewById<TextView>(R.id.autor)
+            val autor = itemView.findViewById<TextView>(R.id.obra_item_autor)
             autor.text = obra.autor
-            val data = itemView.findViewById<TextView>(R.id.data)
+            val data = itemView.findViewById<TextView>(R.id.obra_item_data)
             data.text = obra.data
-            val periodo = itemView.findViewById<TextView>(R.id.data)
+            val periodo = itemView.findViewById<TextView>(R.id.obra_item_periodo)
             periodo.text = obra.periodo
 
         }

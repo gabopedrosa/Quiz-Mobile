@@ -1,17 +1,15 @@
-package com.example.quizapp.ui.activity
+package com.example.quizapp.adm.ui.activity
 
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.R
-import com.example.quizapp.dao.ObrasDao
-import com.example.quizapp.databinding.ActivityCadastroDeObrasBinding
-import com.example.quizapp.models.Obra
+import com.example.quizapp.adm.dao.ObrasDao
+import com.example.quizapp.adm.models.Obra
 
-class FormularioObrasActivities : AppCompatActivity(R.layout.activity_cadastro_de_obras){
-
-    private lateinit var binding: ActivityCadastroDeObrasBinding
+class FormularioObrasActivities :
+    AppCompatActivity(R.layout.activity_cadastro_de_obras) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,9 +17,9 @@ class FormularioObrasActivities : AppCompatActivity(R.layout.activity_cadastro_d
     }
 
     private fun configuraBotaoSalvar() {
-        val botaoSalvar = findViewById<Button>(R.id.btn_cadastrar_obra)
+        val botaoSalvar = findViewById<Button>(R.id.activity_formulario_obra_btn)
         val dao = ObrasDao()
-        botaoSalvar.setOnClickListener{
+        botaoSalvar.setOnClickListener {
             val novaObra = criaObra()
             dao.adiciona(novaObra)
             finish()
@@ -38,16 +36,12 @@ class FormularioObrasActivities : AppCompatActivity(R.layout.activity_cadastro_d
         val campoPeriodoArtistico = findViewById<EditText>(R.id.activity_formulario_obra_periodo)
         val periodo = campoPeriodoArtistico.text.toString()
 
-        return Obra (
+        return Obra(
             nome = nome,
             autor = autor,
             data = data,
             periodo = periodo
 
         )
-
-
     }
-
-
 }

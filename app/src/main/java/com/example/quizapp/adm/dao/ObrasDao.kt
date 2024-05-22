@@ -1,6 +1,6 @@
-package com.example.quizapp.dao
+package com.example.quizapp.adm.dao
 
-import com.example.quizapp.models.Obra
+import com.example.quizapp.adm.models.Obra
 
 class ObrasDao {
 

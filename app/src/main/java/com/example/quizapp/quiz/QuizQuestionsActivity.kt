@@ -1,4 +1,4 @@
-package com.example.quizapp.ui.activity
+package com.example.quizapp.quiz
 
 import android.content.Intent
 import android.graphics.Color
@@ -11,7 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.quizapp.Constants
+import com.example.quizapp.quiz.Constants
 import com.example.quizapp.R
 
 class

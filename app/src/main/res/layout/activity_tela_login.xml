@@ -6,7 +6,7 @@
     android:background="@drawable/app_bg"
     android:orientation="vertical"
     android:padding="16sp"
-    tools:context=".ui.activity.TelaLogin">
+    tools:context=".adm.ui.activity.TelaLogin">
 
     <TextView
         android:textStyle="bold"

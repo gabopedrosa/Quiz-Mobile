@@ -1,4 +1,4 @@
-package com.example.quizapp.ui.activity
+package com.example.quizapp.adm.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizapp.R
-import com.example.quizapp.dao.ObrasDao
-import com.example.quizapp.ui.recyclerview.adapter.ListaObrasAdapter
+import com.example.quizapp.adm.dao.ObrasDao
+import com.example.quizapp.adm.ui.recyclerview.adapter.ListaObrasAdapter
 
 class ListaObrasActivity : AppCompatActivity(R.layout.activity_lista_obras) {
 
@@ -18,7 +18,6 @@ class ListaObrasActivity : AppCompatActivity(R.layout.activity_lista_obras) {
         super.onCreate(savedInstanceState)
         configuraRecyclerView()
         configuraFab()
-
     }
 
     override fun onResume() {
@@ -27,12 +26,13 @@ class ListaObrasActivity : AppCompatActivity(R.layout.activity_lista_obras) {
     }
 
     private fun configuraFab() {
-        val fab = findViewById<Button>(R.id.btn_cadastrar_obra)
+        val fab = findViewById<Button>(R.id.activity_list_obras_fab)
         fab.setOnClickListener {
             vaiParaFormularioObra()
         }
 
     }
+
     private fun vaiParaFormularioObra() {
         val intent = Intent(this, FormularioObrasActivities::class.java)
         startActivity(intent)
@@ -42,6 +42,5 @@ class ListaObrasActivity : AppCompatActivity(R.layout.activity_lista_obras) {
         val recyclerView = findViewById<RecyclerView>(R.id.activity_lista_obras_recyclerview)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
-
     }
 }

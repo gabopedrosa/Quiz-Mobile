@@ -1,4 +1,4 @@
-package com.example.quizapp.ui.activity
+package com.example.quizapp.adm.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -21,7 +21,7 @@ class OpcoesAdministrador : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if (v.id == R.id.activity_opcoes_adm_obras){
-            startActivity(Intent(this, ListaObrasActivity::class.java))
+            startActivity(Intent(this, FormularioObrasActivities::class.java))
         }
     }
 }

@@ -15,13 +15,13 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activity.OpcoesAdministrador"
+            android:name=".adm.ui.activity.OpcoesAdministrador"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.ListaObrasActivity"
+            android:name=".adm.ui.activity.ListaObrasActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.MainActivity2"
+            android:name=".adm.ui.activity.MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,21 +30,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.FormularioObrasActivities"
+            android:name=".adm.ui.activity.FormularioObrasActivities"
             android:exported="false"
             android:label="@string/title_activity_cadastro_de_obras"
             android:theme="@style/Theme.QuizApp" />
         <activity
-            android:name=".ui.activity.TelaLogin"
+            android:name=".adm.ui.activity.TelaLogin"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.ResultActivity"
+            android:name=".quiz.ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.QuizQuestionsActivity"
+            android:name=".quiz.QuizQuestionsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.MainActivity"
+            android:name=".quiz.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
     </application>

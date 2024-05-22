@@ -1,11 +1,11 @@
-package com.example.quizapp.ui.activity
+package com.example.quizapp.quiz
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.quizapp.Constants
+import com.example.quizapp.quiz.Constants
 import com.example.quizapp.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase

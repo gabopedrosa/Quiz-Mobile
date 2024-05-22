@@ -1,4 +1,4 @@
-package com.example.quizapp.models
+package com.example.quizapp.adm.models
 
 class Obra(
     val nome: String,

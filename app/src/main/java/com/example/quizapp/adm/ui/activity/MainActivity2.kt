@@ -1,4 +1,4 @@
-package com.example.quizapp.ui.activity
+package com.example.quizapp.adm.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.R
 import com.example.quizapp.databinding.ActivityMain2Binding
+import com.example.quizapp.quiz.MainActivity
 
 class MainActivity2 : AppCompatActivity(), View.OnClickListener {
 

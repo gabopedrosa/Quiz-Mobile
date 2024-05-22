@@ -1,4 +1,4 @@
-package com.example.quizapp.ui.activity
+package com.example.quizapp.adm.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

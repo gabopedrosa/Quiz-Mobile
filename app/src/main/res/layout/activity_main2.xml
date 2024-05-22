@@ -6,9 +6,10 @@
     android:background="@drawable/app_bg"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".ui.activity.MainActivity2">
+    tools:context=".adm.ui.activity.MainActivity2">
 
     <Button
+        android:padding="16dp"
         android:id="@+id/btn_adm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,6 +21,7 @@
         android:textStyle="bold" />
 
     <Button
+        android:padding="16dp"
         android:id="@+id/btn_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
