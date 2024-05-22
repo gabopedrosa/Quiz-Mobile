@@ -1,5 +1,6 @@
 package com.example.quizapp.adm.ui.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -22,7 +23,9 @@ class FormularioObrasActivities :
         botaoSalvar.setOnClickListener {
             val novaObra = criaObra()
             dao.adiciona(novaObra)
-            finish()
+            val intent = Intent(this, ListaObrasActivity::class.java)
+            startActivity(intent)
+            //finish()
         }
     }
 
