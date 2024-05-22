@@ -2,13 +2,13 @@ package com.example.quizapp.adm.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizapp.R
 import com.example.quizapp.adm.dao.ObrasDao
 import com.example.quizapp.adm.ui.recyclerview.adapter.ListaObrasAdapter
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ListaObrasActivity : AppCompatActivity(R.layout.activity_lista_obras) {
 
@@ -26,7 +26,7 @@ class ListaObrasActivity : AppCompatActivity(R.layout.activity_lista_obras) {
     }
 
     private fun configuraFab() {
-        val fab = findViewById<Button>(R.id.activity_list_obras_fab)
+        val fab = findViewById<FloatingActionButton>(R.id.activity_list_obras_fab)
         fab.setOnClickListener {
             vaiParaFormularioObra()
         }
