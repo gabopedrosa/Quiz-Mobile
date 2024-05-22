@@ -1,16 +1,18 @@
-package com.example.quizapp
+package com.example.quizapp.ui.activity
 
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
-import android.graphics.drawable.Drawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.*
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.ProgressBar
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import kotlin.reflect.typeOf
+import com.example.quizapp.Constants
+import com.example.quizapp.R
 
 class
 QuizQuestionsActivity : AppCompatActivity() {
@@ -21,7 +23,12 @@ QuizQuestionsActivity : AppCompatActivity() {
     private var selectedAlternativeIndex = -1;
     private var isAnswerChecked = false;
     private var totalScore = 0;
-    private val alternativesIds = arrayOf(R.id.optionOne, R.id.optionTwo, R.id.optionThree, R.id.optionFour)
+    private val alternativesIds = arrayOf(
+        R.id.optionOne,
+        R.id.optionTwo,
+        R.id.optionThree,
+        R.id.optionFour
+    )
 
     private var tvQuestion: TextView? = null
     private var ivImage: ImageView? = null
@@ -60,11 +67,17 @@ QuizQuestionsActivity : AppCompatActivity() {
                     if (
                         selectedAlternativeIndex == currentQuestion.correctAnswerIndex
                     ) {
-                        answerView(tvAlternatives!![selectedAlternativeIndex], R.drawable.correct_option_border_bg)
+                        answerView(tvAlternatives!![selectedAlternativeIndex],
+                            R.drawable.correct_option_border_bg
+                        )
                         totalScore++
                     } else {
-                        answerView(tvAlternatives!![selectedAlternativeIndex], R.drawable.wrong_option_border_bg)
-                        answerView(tvAlternatives!![currentQuestion.correctAnswerIndex], R.drawable.correct_option_border_bg)
+                        answerView(tvAlternatives!![selectedAlternativeIndex],
+                            R.drawable.wrong_option_border_bg
+                        )
+                        answerView(tvAlternatives!![currentQuestion.correctAnswerIndex],
+                            R.drawable.correct_option_border_bg
+                        )
                     }
 
                     isAnswerChecked = true

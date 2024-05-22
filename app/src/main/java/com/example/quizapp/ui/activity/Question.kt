@@ -1,4 +1,4 @@
-package com.example.quizapp
+package com.example.quizapp.ui.activity
 
 data class Question(
     val id: Int,
