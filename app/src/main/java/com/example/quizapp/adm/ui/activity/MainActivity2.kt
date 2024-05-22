@@ -19,14 +19,14 @@ class MainActivity2 : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         binding.btnUsuario.setOnClickListener(this)
-        binding.btnAdm.setOnClickListener(this)
+        binding.btnAdministrador.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         if (v.id == R.id.btn_usuario) {
             startActivity(Intent(this, MainActivity::class.java))
 
-        } else if (v.id == R.id.btn_adm) {
+        } else if (v.id == R.id.btn_administrador) {
             startActivity(Intent(this, OpcoesAdministrador::class.java))
         }
     }
