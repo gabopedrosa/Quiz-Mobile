@@ -1,9 +1,15 @@
+## Demonstração
+
+![GIF](https://media.giphy.com/media/StqUw6Mn5z4jn9PFfz/giphy.gif)
+
+
 
 # Quiz Mobile em Kotlin
 
 T197-89 Desenv plataformas móveis
 
 ## Documentação da API
+Realtime Database - FireBase API
 
 #### Retorna todos os itens
 
@@ -11,23 +17,18 @@ T197-89 Desenv plataformas móveis
   Requisito: Android Studio
 ```
 
-| Parâmetro   | Tipo       | Descrição                           |
-| :---------- | :--------- | :---------------------------------- |
-| `api_key` | `string` | **Obrigatório**. A chave da sua API |
+| Parâmetro   | Tipo       | Descrição                                            |
+| :---------- | :--------- | :--------------------------------------------------- |
+| `api_key` | `string` | **Obrigatório**. AIzaSyCPlqRE4O22QrHhqoPAYITGRdrynnih4Mo |
 
-#### Retorna um item
-
-```http
-  GET /api/items/${id}
+#### Retorna dados do banco
+```
+https://console.firebase.google.com/u/2/project/quiz-kotlin-d6d41/database/quiz-kotlin-d6d41-default-rtdb/data/~2F?hl=pt-br
 ```
 
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
-
-#### add(num1, num2)
-
-Recebe dois números e retorna a sua soma.
+| Parâmetro   | Tipo       | Descrição                                         |
+| :---------- | :--------- | :------------------------------------------------ |
+| `key`      | `string` | **Obrigatório**. Banco retorna KEY gerada de usuário |
 
 
 ## Referência
@@ -35,20 +36,23 @@ Recebe dois números e retorna a sua soma.
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
  - [Awesome README](https://github.com/matiassingers/awesome-readme)
  - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+ - [FIREBASE Realtime, database](https://www.youtube.com/watch?v=3XiZF1UBn50&ab_channel=MkrDeveloper)
 
 
 ## Apêndice
 
-Coloque qualquer informação adicional aqui
+Projeto Integrado com Kotlin no Android Studio, utiliza uma integração com a API do FireBase usando Realtime Database
 
 ## Documentação de cores
 
-| Cor               | Hexadecimal                                                |
-| ----------------- | ---------------------------------------------------------------- |
-| Cor exemplo       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Cor exemplo       | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Cor exemplo       | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Cor exemplo       | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+- ![#ffbb86fc](https://via.placeholder.com/15/ffbb86fc/000000?text=+) `#ffbb86fc` - Purple 200
+- ![#ff9800](https://via.placeholder.com/15/ff9800/000000?text=+) `#ff9800` - Color Primary
+- ![#ffbf00](https://via.placeholder.com/15/ffbf00/000000?text=+) `#ffbf00` - Purple 700
+- ![#ff03dac5](https://via.placeholder.com/15/ff03dac5/000000?text=+) `#ff03dac5` - Teal 200
+- ![#ff018786](https://via.placeholder.com/15/ff018786/000000?text=+) `#ff018786` - Teal 700
+- ![#777777](https://via.placeholder.com/15/777777/000000?text=+) `#777777` - Gray
+- ![#ff000000](https://via.placeholder.com/15/000000/000000?text=+) `#ff000000` - Black
+- ![#ffffffff](https://via.placeholder.com/15/ffffffff/000000?text=+) `#ffffffff` - White
 
 
 ## Etiquetas
@@ -60,25 +64,9 @@ Adicione etiquetas de algum lugar, como: [shields.io](https://shields.io/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
 
-## Contribuindo
 
-Contribuições são sempre bem-vindas!
+## Executar projeto
 
-Veja `contribuindo.md` para saber como começar.
+Para executar esse projeto, rode o MainActivity no Android Studio
 
-Por favor, siga o `código de conduta` desse projeto.
-
-
-## Demonstração
-
-Insira um gif ou um link de alguma demonstração
-
-
-## Deploy
-
-Para fazer o deploy desse projeto rode
-
-```bash
-  npm run deploy
-```
 

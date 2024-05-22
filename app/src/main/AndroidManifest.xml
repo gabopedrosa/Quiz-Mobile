@@ -15,13 +15,20 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
         <activity
-            android:name=".adm.ui.activity.OpcoesAdministrador"
+            android:name=".TelaLogin"
             android:exported="false" />
         <activity
-            android:name=".adm.ui.activity.ListaObrasActivity"
-            android:exported="false" />
+            android:name=".CadastroDeObras"
+            android:exported="false"
+            android:label="@string/title_activity_cadastro_de_obras"
+            android:theme="@style/Theme.QuizApp" />
         <activity
-            android:name=".adm.ui.activity.MainActivity2"
+            android:name=".CadastroAdmin"
+            android:exported="false"
+            android:label="@string/title_activity_cadastro_admin"
+            android:theme="@style/Theme.QuizApp" />
+        <activity
+            android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,23 +37,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".adm.ui.activity.FormularioObrasActivities"
-            android:exported="false"
-            android:label="@string/title_activity_cadastro_de_obras"
-            android:theme="@style/Theme.QuizApp" />
-        <activity
-            android:name=".adm.ui.activity.TelaLogin"
+            android:name=".ResultActivity"
             android:exported="false" />
         <activity
-            android:name=".quiz.ResultActivity"
+            android:name=".QuizQuestionsActivity"
             android:exported="false" />
         <activity
-            android:name=".quiz.QuizQuestionsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".quiz.MainActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
