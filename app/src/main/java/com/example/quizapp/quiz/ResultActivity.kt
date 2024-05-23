@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.example.quizapp.entity.Jogadores
+import com.example.quizapp.quiz.Constants
+import com.example.quizapp.quiz.MainActivity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 

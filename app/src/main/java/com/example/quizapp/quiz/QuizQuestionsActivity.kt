@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.quizapp.quiz.Constants
 import com.example.quizapp.R
+import com.example.quizapp.ResultActivity
 
 class
 QuizQuestionsActivity : AppCompatActivity() {
