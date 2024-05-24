@@ -25,7 +25,6 @@ class ListaObrasAdapter(
             data.text = obra.data
             val periodo = itemView.findViewById<TextView>(R.id.obra_item_periodo)
             periodo.text = obra.periodo
-
         }
     }
 

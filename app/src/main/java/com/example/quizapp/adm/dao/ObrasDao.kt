@@ -15,6 +15,13 @@ class ObrasDao {
     }
 
     companion object {
-        private val obras = mutableListOf<Obra>()
+        private val obras = mutableListOf<Obra>(
+            Obra(
+                nome = "MonaLisa",
+                autor = "Leornado Da Vinci",
+                data = "Entre 1503 e 1506",
+                periodo = "Renascimento"
+            )
+        )
     }
 }
