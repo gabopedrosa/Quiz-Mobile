@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.R
 import com.example.quizapp.adm.dao.ObrasDao
@@ -15,6 +16,17 @@ class FormularioObrasActivities :
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         configuraBotaoSalvar()
+
+        //caixa de diaologo
+        AlertDialog.Builder(this)
+            .setView(R.layout.formulario_image)
+            .setPositiveButton("Confirmar") {_,_ ->
+
+            }
+            .setNegativeButton("Cancelar"){_,_ ->
+
+            }
+            .show()
     }
 
     private fun configuraBotaoSalvar() {
