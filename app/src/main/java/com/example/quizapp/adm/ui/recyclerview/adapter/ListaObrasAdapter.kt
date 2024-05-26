@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
 import com.example.quizapp.R
+import com.example.quizapp.adm.extensions.tentaCarregarImagem
 import com.example.quizapp.adm.models.Obra
 import com.example.quizapp.databinding.ObraItemBinding
 
@@ -26,7 +26,17 @@ class ListaObrasAdapter(
             data.text = obra.data
             val periodo = itemView.findViewById<TextView>(R.id.obra_item_periodo)
             periodo.text = obra.periodo
-            binding.imageView.load(obra.imagem)
+
+//            val visibilidade = if(obra.imagem != null){
+//                View.VISIBLE
+//            } else {
+//                View.GONE
+//            }
+//
+//            binding.imageView.visibility = visibilidade
+
+            binding.imageView.tentaCarregarImagem(obra.imagem)
+
         }
     }
 

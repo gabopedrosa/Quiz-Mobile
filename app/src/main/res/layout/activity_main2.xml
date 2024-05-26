@@ -10,24 +10,28 @@
     tools:context=".adm.ui.activity.MainActivity2">
 
     <Button
+        android:padding="16dp"
         android:id="@+id/btn_administrador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
         android:paddingVertical="10dp"
-        android:text="ADMINISTRADOR"
-        android:backgroundTint="@color/colorPrimary"
-        android:textSize="18dp" />
+        android:textColor="@color/black"
+        android:text="Administrador"
+        android:backgroundTint="@color/purple_700"
+        android:textSize="18sp" />
 
     <Button
+        android:textColor="@color/black"
+        android:padding="16dp"
         android:id="@+id/btn_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:paddingVertical="10dp"
-        android:text="USUARIO"
-        android:backgroundTint="@color/colorPrimary"
-        android:textSize="18dp" />
+        android:text="Usuário"
+        android:backgroundTint="@color/purple_700"
+        android:textSize="18sp" />
 
 
 </LinearLayout>
