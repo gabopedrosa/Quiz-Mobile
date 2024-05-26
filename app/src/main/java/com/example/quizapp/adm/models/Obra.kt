@@ -4,5 +4,6 @@ class Obra(
     val nome: String,
     val autor: String,
     val data: String,
-    val periodo: String
+    val periodo: String,
+    val imagem: String? = null
 )

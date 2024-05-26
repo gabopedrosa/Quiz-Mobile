@@ -6,27 +6,51 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import coil.load
 import com.example.quizapp.R
 import com.example.quizapp.adm.dao.ObrasDao
 import com.example.quizapp.adm.models.Obra
+import com.example.quizapp.databinding.ActivityCadastroDeObrasBinding
+import com.example.quizapp.databinding.FormularioImageBinding
 
 class FormularioObrasActivities :
-    AppCompatActivity(R.layout.activity_cadastro_de_obras) {
+    AppCompatActivity() {
+
+    private val binding by lazy {
+        ActivityCadastroDeObrasBinding.inflate(layoutInflater)
+    }
+
+    private var url: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(binding.root)
         configuraBotaoSalvar()
+        binding.activityFormularioImagem.setOnClickListener {
+            val bindingFormularioImage = FormularioImageBinding.inflate(layoutInflater)
 
-        //caixa de diaologo
-        AlertDialog.Builder(this)
-            .setView(R.layout.formulario_image)
-            .setPositiveButton("Confirmar") {_,_ ->
-
-            }
-            .setNegativeButton("Cancelar"){_,_ ->
+            bindingFormularioImage.formularioBotaoCarregar.setOnClickListener{
+                val url = bindingFormularioImage.formularioImgUrl.text.toString()
+                bindingFormularioImage.formularioImageView.load(url)
 
             }
-            .show()
+
+            //caixa de diaologo
+            AlertDialog.Builder(this)
+                .setView(bindingFormularioImage.root)
+                .setPositiveButton("Confirmar") { _, _ ->
+                    url = bindingFormularioImage.formularioImgUrl.text.toString()
+                    binding.activityFormularioImagem.load(url)
+
+                }
+                .setNegativeButton("Cancelar") { _, _ ->
+
+                }
+                .show()
+
+        }
+
+
     }
 
     private fun configuraBotaoSalvar() {
@@ -37,7 +61,7 @@ class FormularioObrasActivities :
             dao.adiciona(novaObra)
             val intent = Intent(this, ListaObrasActivity::class.java)
             startActivity(intent)
-            //finish()
+//            finish()
         }
     }
 
@@ -55,7 +79,8 @@ class FormularioObrasActivities :
             nome = nome,
             autor = autor,
             data = data,
-            periodo = periodo
+            periodo = periodo,
+            imagem = url
 
         )
     }
