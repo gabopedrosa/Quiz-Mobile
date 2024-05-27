@@ -8,29 +8,27 @@
     android:background="@drawable/app_bg"
     tools:context=".adm.ui.activity.OpcoesAdministrador">
 
-    <Button
-        android:id="@+id/activity_opcoes_adm_exposicao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:backgroundTint="@color/purple_700"
-        android:padding="16dp"
-        android:text="Cadastrar Exposicao"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+<!--    <Button-->
+<!--        android:id="@+id/activity_opcoes_adm_exposicao"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="250dp"-->
+<!--        android:backgroundTint="@color/purple_700"-->
+<!--        android:padding="16dp"-->
+<!--        android:text="Cadastrar Exposicao"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="18sp" />-->
 
     <Button
         android:id="@+id/activity_opcoes_adm_obras"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="250dp"
         android:backgroundTint="@color/purple_700"
         android:padding="16dp"
         android:text="Cadastrar Obras"
         android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textSize="18sp" />
     <Button
         android:id="@+id/activity_opcoes_adm_quiz"
         android:layout_width="match_parent"
@@ -40,7 +38,6 @@
         android:padding="16dp"
         android:text="Cadastrar Quiz"
         android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textSize="18sp" />
 
 </LinearLayout>

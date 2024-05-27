@@ -15,6 +15,9 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
         <activity
+            android:name=".adm.ui.activity.CadastroDeExposicao"
+            android:exported="false" />
+        <activity
             android:name=".adm.ui.activity.MainActivity2"
             android:exported="true">
             <intent-filter>
@@ -23,8 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".adm.ui.activity.ListaObrasActivity"
             android:exported="false" />
@@ -36,7 +37,6 @@
         <activity
             android:name=".adm.ui.activity.OpcoesAdministrador"
             android:exported="false" />
-
         <activity
             android:name=".ResultActivity"
             android:exported="false" />
