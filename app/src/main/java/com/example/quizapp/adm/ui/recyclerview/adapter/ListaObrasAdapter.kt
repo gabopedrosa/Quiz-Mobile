@@ -30,6 +30,8 @@ class ListaObrasAdapter(
             }
         }
         fun vincula(obra: Obra) {
+            this.obra = obra
+
             val nome = itemView.findViewById<TextView>(R.id.obra_item_nome)
             nome.text = obra.nome
             val autor = itemView.findViewById<TextView>(R.id.obra_item_autor)
