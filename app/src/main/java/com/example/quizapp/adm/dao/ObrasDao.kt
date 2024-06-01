@@ -20,7 +20,7 @@ class ObrasDao {
                 nome = "MonaLisa",
                 autor = "Leornado Da Vinci",
                 data = "Entre 1503 e 1506",
-                periodo = "Lorem ipsum dolor sit amet, consectetur adipiscing eliliquet nces dui",
+                periodo = "Renascimento",
                 imagem = "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
             ),
             Obra(

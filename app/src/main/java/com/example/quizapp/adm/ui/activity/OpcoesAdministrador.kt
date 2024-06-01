@@ -17,11 +17,15 @@ class OpcoesAdministrador : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         binding.activityOpcoesAdmObras.setOnClickListener(this)
+        binding.activityOpcoesAdmQuiz.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         if (v.id == R.id.activity_opcoes_adm_obras){
             startActivity(Intent(this, ListaObrasActivity::class.java))
+        }
+        else if(v.id == R.id.activity_opcoes_adm_quiz){
+            startActivity(Intent(this, CadastroQuiz::class.java))
         }
 
     }

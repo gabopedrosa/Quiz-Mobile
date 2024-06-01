@@ -1,14 +1,23 @@
 package com.example.quizapp.quiz
 
 import com.example.quizapp.R
-import com.example.quizapp.quiz.Question
+import com.example.quizapp.adm.dao.PerguntaDao
+import com.example.quizapp.adm.models.Pergunta
 
 object Constants {
     val USER_NAME: String = "user_name"
     val TOTAL_QUESTIONS: String = "total_questions"
     val SCORE: String = "score"
 
+    fun addQuestions(pergunta: Pergunta){
+        PerguntaDao.adiciona(pergunta)
+    }
+
     fun getQuestions(): ArrayList<Question> {
+
+        val dao = PerguntaDao()
+
+
         val questionsList = ArrayList<Question>()
 
         // 1
