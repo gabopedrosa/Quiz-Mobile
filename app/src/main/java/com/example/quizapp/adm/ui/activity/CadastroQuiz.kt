@@ -23,7 +23,7 @@ class CadastroQuiz : AppCompatActivity() {
         val botaoFinalizar = binding.buttonFinalizar
 
         botaoFinalizar.setOnClickListener{
-            startActivity(Intent(this, OpcoesAdministrador::class.java))
+            startActivity(Intent(this, TelaLogin::class.java))
         }
     }
 
@@ -36,18 +36,20 @@ class CadastroQuiz : AppCompatActivity() {
             val campoItemB = binding.editItemB.text.toString()
             val campoItemC = binding.editItemC.text.toString()
             val campoItemD = binding.editItemD.text.toString()
+            val campoItemCorreto = binding.editItemCorreto.text.toString().toInt()
 
             val novaPergunta = Pergunta(
                 pergunta = campoPergunta,
                 itemA = campoItemA,
                 itemB = campoItemB,
                 itemC = campoItemC,
-                itemD = campoItemD
+                itemD = campoItemD,
+                itemCorreto = campoItemCorreto
             )
 //            Log.d("Nova Pergunta", "Pergunta: $campoPergunta, Item A: $campoItemA, Item B: $campoItemB, Item C: $campoItemC, Item D: $campoItemD")
 
 
-            Constants.addQuestions(novaPergunta)
+           Constants.addQuestion(novaPergunta)
 
             limparCampos()
         }
@@ -59,6 +61,7 @@ class CadastroQuiz : AppCompatActivity() {
         binding.editItemB.text.clear()
         binding.editItemC.text.clear()
         binding.editItemD.text.clear()
+        binding.editItemCorreto.text.clear()
 
     }
 

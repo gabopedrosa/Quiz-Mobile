@@ -17,13 +17,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:ellipsize="end"
             android:fontFamily="@font/montserrat"
+            android:maxLines="1"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="MonaLisa" />
+            tools:text="@tools:sample/lorem/random" />
 
         <TextView
             android:id="@+id/obra_item_autor"
@@ -51,15 +53,17 @@
         <TextView
             android:id="@+id/obra_item_periodo"
             android:layout_width="0dp"
+            android:ellipsize="end"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/montserrat"
             android:textSize="14sp"
+            android:maxLines="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/obra_item_nome"
             app:layout_constraintStart_toStartOf="@id/obra_item_nome"
             app:layout_constraintTop_toBottomOf="@id/obra_item_data"
-            tools:text="Renascentista" />
+            tools:text="@tools:sample/lorem/random" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"

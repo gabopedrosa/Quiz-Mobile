@@ -2,6 +2,7 @@ package com.example.quizapp.adm.ui.recyclerview.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -27,13 +28,13 @@ class ListaObrasAdapter(
             val periodo = itemView.findViewById<TextView>(R.id.obra_item_periodo)
             periodo.text = obra.periodo
 
-//            val visibilidade = if(obra.imagem != null){
-//                View.VISIBLE
-//            } else {
-//                View.GONE
-//            }
-//
-//            binding.imageView.visibility = visibilidade
+            val visibilidade = if(obra.imagem != null){
+                View.VISIBLE
+            } else {
+                View.GONE
+            }
+
+            binding.imageView.visibility = visibilidade
 
             binding.imageView.tentaCarregarImagem(obra.imagem)
 

@@ -16,9 +16,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@color/white"
+        android:hint="Pergunta"
         android:padding="12dp"
         android:paddingTop="16dp"
-        android:hint="Pergunta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,9 +29,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@color/white"
+        android:hint="Item A"
         android:padding="12dp"
         android:paddingTop="16dp"
-        android:hint="Item A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_pergunta" />
@@ -42,9 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@color/white"
+        android:hint="Item B"
         android:padding="12dp"
         android:paddingTop="16dp"
-        android:hint="Item B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_itemA" />
@@ -55,9 +55,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@color/white"
+        android:hint="Item C"
         android:padding="12dp"
         android:paddingTop="16dp"
-        android:hint="Item C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_itemB" />
@@ -68,12 +68,26 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@color/white"
+        android:hint="Item D"
         android:padding="12dp"
         android:paddingTop="16dp"
-        android:hint="Item D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_itemC" />
+
+    <EditText
+        android:id="@+id/edit_item_correto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:hint="Numero do Item Correto"
+        android:inputType="number"
+        android:padding="12dp"
+        android:paddingTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_itemD" />
 
     <Button
         android:id="@+id/button_nova_pergunta"
@@ -84,7 +98,7 @@
         android:text="Nova Pergunta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_itemD" />
+        app:layout_constraintTop_toBottomOf="@id/edit_item_correto" />
 
     <Button
         android:id="@+id/button_finalizar"

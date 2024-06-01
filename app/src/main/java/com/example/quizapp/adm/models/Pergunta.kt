@@ -5,5 +5,6 @@ class Pergunta(
     val itemA: String,
     val itemB: String,
     val itemC: String,
-    val itemD: String
+    val itemD: String,
+    val itemCorreto : Int
 )
