@@ -13,11 +13,22 @@ import com.example.quizapp.databinding.ObraItemBinding
 
 class ListaObrasAdapter(
     private val context: Context,
-    obras: List<Obra>) : RecyclerView.Adapter<ListaObrasAdapter.ViewHolder>() {
+    obras: List<Obra>,
+    var quandoClicaNoItem: (obra: Obra) -> Unit = {}) : RecyclerView.Adapter<ListaObrasAdapter.ViewHolder>() {
 
     private val obras = obras.toMutableList()
 
-    class ViewHolder(private val binding: ObraItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(private val binding: ObraItemBinding) : RecyclerView.ViewHolder(binding.root) {
+
+        private lateinit var obra: Obra
+
+        init {
+            itemView.setOnClickListener{
+                if (::obra.isInitialized){
+                    quandoClicaNoItem(obra)
+                }
+            }
+        }
         fun vincula(obra: Obra) {
             val nome = itemView.findViewById<TextView>(R.id.obra_item_nome)
             nome.text = obra.nome

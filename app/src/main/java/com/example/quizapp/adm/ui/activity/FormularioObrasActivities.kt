@@ -42,7 +42,7 @@ class FormularioObrasActivities :
             dao.adiciona(novaObra)
             val intent = Intent(this, ListaObrasActivity::class.java)
             startActivity(intent)
-//            finish()
+            finish()
         }
     }
 
