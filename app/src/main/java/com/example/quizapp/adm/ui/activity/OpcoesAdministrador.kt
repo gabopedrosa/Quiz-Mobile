@@ -23,5 +23,6 @@ class OpcoesAdministrador : AppCompatActivity(), View.OnClickListener {
         if (v.id == R.id.activity_opcoes_adm_obras){
             startActivity(Intent(this, ListaObrasActivity::class.java))
         }
+
     }
 }

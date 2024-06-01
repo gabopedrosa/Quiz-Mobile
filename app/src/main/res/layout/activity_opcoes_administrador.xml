@@ -3,19 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_bg"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@drawable/app_bg"
     tools:context=".adm.ui.activity.OpcoesAdministrador">
 
-    <!--    <Button-->
-    <!--        android:id="@+id/activity_opcoes_adm_exposicao"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="250dp"-->
-    <!--        android:backgroundTint="@color/colorPrimary"-->
-    <!--        android:text="Cadastrar Exposicao"-->
-    <!--        android:textColor="@color/white" />-->
+<!--    <Button-->
+<!--        android:id="@+id/activity_opcoes_adm_exposicao"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="250dp"-->
+<!--        android:backgroundTint="@color/purple_700"-->
+<!--        android:padding="16dp"-->
+<!--        android:text="Cadastrar Exposicao"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold" />-->
 
     <Button
         android:id="@+id/activity_opcoes_adm_obras"
@@ -25,7 +28,6 @@
         android:backgroundTint="@color/colorPrimary"
         android:text="Cadastrar Obras"
         android:textColor="@color/white" />
-
     <Button
         android:id="@+id/activity_opcoes_adm_quiz"
         android:layout_width="match_parent"
