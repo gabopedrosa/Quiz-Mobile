@@ -21,7 +21,7 @@ class OpcoesAdministrador : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         if (v.id == R.id.activity_opcoes_adm_obras){
-            startActivity(Intent(this, FormularioObrasActivities::class.java))
+            startActivity(Intent(this, ListaObrasActivity::class.java))
         }
     }
 }
