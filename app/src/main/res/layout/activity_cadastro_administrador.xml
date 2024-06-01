@@ -5,60 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/app_bg"
-    android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".adm.ui.activity.TelaLogin">
+    tools:context=".adm.ui.activity.CadastroAdministrador">
 
     <EditText
-        android:id="@+id/edit_email"
+        android:layout_marginTop="128dp"
+        android:id="@+id/activity_cadastro_adm_nome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
         android:background="@color/white"
-        android:hint="Email"
-        android:padding="10dp"
+        android:hint="Nome"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit_senha"
+        android:id="@+id/activity_cadastro_adm_matricula"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:hint="Matricula"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_cadastro_adm_nome" />
+
+    <EditText
+        android:id="@+id/activity_cadastro_adm_senha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:background="@color/white"
         android:hint="Senha"
-        android:padding="10dp"
+        android:inputType="numberPassword"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_cadastro_adm_matricula" />
 
     <Button
-        android:id="@+id/button_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="64dp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="LOGIN"
+        android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_senha" />
-
-    <Button
-        android:id="@+id/button_cadastrar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/transparent"
-        android:gravity="center"
-        android:text="Ainda não é cadastrado? Cadastre-se!"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_login"
-        app:layout_constraintVertical_bias="0.1" />
-
+        app:layout_constraintTop_toBottomOf="@+id/activity_cadastro_adm_senha" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
