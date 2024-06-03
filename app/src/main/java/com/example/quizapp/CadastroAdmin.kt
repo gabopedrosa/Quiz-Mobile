@@ -21,6 +21,7 @@ class CadastroAdmin : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         Toast.makeText(this, "cadastrado adm", Toast.LENGTH_SHORT).show()
+        //teste
     }
 }
 
